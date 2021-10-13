@@ -1,0 +1,907 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+ .grid-container{
+     background: white;
+     min-height: 100vh;
+     display: grid;
+     grid-gap: 10px;
+     grid-template-columns: 500px auto;
+     grid-template-areas: 
+     
+     "avatar skills"
+     "contact work-experience"
+     "profile work-experience"
+     "education work-experience"
+     ;
+
+ }
+ p{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+ }
+
+/*/-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----/*/
+
+ .avatar-container{
+    grid-area: avatar;
+    height: 500px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .avatar img{
+    height: 20em;
+    border-radius: 50%;
+    margin-left: 5em;
+    outline: 1px solid black;
+       outline-offset: 10px;
+ }
+ .avatar h1{
+     text-align: center;
+     margin-top: 20px;
+ }
+ .avatar p{
+    text-align: center; 
+ }
+
+/*/-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----/*/
+
+ .skills{
+    grid-area: skills;
+    height: auto;
+    width: auto;
+}
+.skills img{
+    border-radius: 50%;
+    height: 60px;
+    margin-left: 55px;
+    margin-top: 122px;
+    position: absolute;
+}
+.skills h1{
+    width: 90%;
+    height: 65px;
+    font-size: 50px;
+    margin-left:50px;
+    margin-top: 120px;
+    text-align: center;
+    border: 1px solid black;
+}
+.skills h3{
+    margin-top: 25px;
+}
+.skills .discreption{
+    margin: 50px;
+}
+
+/*/-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----/*/
+
+ .contact{
+    grid-area: contact;
+    height: auto;
+    width: auto;
+}
+.contact img{
+    border-radius: 50%;
+    height: 60px;
+    margin-left: 55px;
+    margin-top: 5px;
+    position: absolute;
+}
+.contact .contact-icons{
+    margin-left: 100px;
+}
+.contact .contact-icons img{
+    margin-left: -40px;
+    margin-top: 25px;
+    height: 45px;
+}
+.contact h1{
+    width: 90%;
+    height: 70px;
+    font-size: 50px;
+    margin-left: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+.contact h3{
+    margin: 35px;
+}
+
+/*/-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----/*/
+
+.profile{
+    grid-area: profile;
+    height: auto;
+    width: auto;
+}
+.profile img{
+    border-radius: 50%;
+    height: 60px;
+    margin-left: 55px;
+    margin-top: 5px;
+    position: absolute;
+}
+.profile h1{
+    width: 90%;
+    height: 70px;
+    font-size: 50px;
+    margin-left: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+.profile .discreption{
+    margin: 20px;
+}
+/*/-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----/*/
+ .work-experience{
+    grid-area: work-experience;
+    height: auto;
+    width: auto;
+}
+.work-experience img{
+    border-radius: 50%;
+    height: 60px;
+    margin-left: 55px;
+    margin-top: 5px;
+    position: absolute;
+}
+.work-experience h1{
+    width: 90%;
+    height: 70px;
+    font-size: 50px;
+    margin-left: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+.work-experience .discreption{
+    margin: 50px;
+}
+.work-experience .list{
+    margin: 20px 0px 0px 70px;
+}
+
+/*/-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----/*/
+
+ .education{
+    grid-area: education;
+    height: auto;
+    width: auto;
+}
+.education img{
+    border-radius: 50%;
+    height: 55px;
+    margin-left: 45px;
+    margin-top: 5px;
+    position: absolute;
+}
+.education h1{
+    width: 90%;
+    height: 70px;
+    font-size: 45px;
+    margin-left: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+.timeline{ 
+    width:100%;
+    height:357px;
+    display:flex;
+    margin: 50px 0px 0px 60px;
+}
+.lines{
+    margin-left:40px;
+    margin-top:6px;
+}   
+.dot{
+    width:14px;
+    height:14px;
+    background: black;
+    border-radius:8px;
+}
+      
+.line{
+    height:103px;
+    width:2px;
+    background: black;
+    margin-left:5.3px;
+}
+.d-container{
+    margin-left: -80px;
+    position: absolute;
+    margin-top: -15px;
+}
+.sc-container{
+    margin-left: 25px;
+    position: absolute;
+    margin-top: -20px;
+}
+
+/*/-----media area-----//-----media area-----//-----media area-----//-----media area-----//-----media area-----//-----media area-----//-----media area-----//-----media area-----//-----media area-----//-----media area-----/*/
+
+/*/-----breakpoints-----/*/
+
+@media only screen and (max-width: 1116px) {
+    .grid-container{
+        background: white;
+        min-height: 100vh;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 400px auto;
+        grid-template-areas: 
+        
+        "avatar skills"
+        "contact work-experience"
+        "profile work-experience"
+        "education work-experience"
+        ;
+   
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+   
+   /*/-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----/*/
+   
+    .avatar-container{
+       grid-area: avatar;
+       height: 500px;
+       width: auto;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .avatar img{
+       height: 18em;
+       border-radius: 50%;
+       margin-left: 3em;
+       outline: 1px solid black;
+       outline-offset: 5px;
+    }
+    .avatar h1{
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 23px;
+    }
+    .avatar p{
+       text-align: center; 
+    }
+   
+   /*/-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----/*/
+   
+    .skills{
+       grid-area: skills;
+       height: auto;
+       width: auto;
+   }
+   .skills img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 52px;
+       margin-top: 120px;
+       position: absolute;
+   }
+   .skills h1{
+       width: 85%;
+       height: 40px;
+       font-size: 30px;
+       margin-left:50px;
+       margin-top: 120px;
+       margin-bottom: -20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .skills h3{
+       margin-top: 15px;
+   }
+   .skills .discreption{
+       margin: 50px;
+   }
+   
+   /*/-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----/*/
+   
+    .contact{
+       grid-area: contact;
+       height: auto;
+       width: auto;
+   }
+   .contact img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 55px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .contact .contact-icons{
+       margin-left: 100px;
+   }
+   .contact .contact-icons img{
+       margin-left: -40px;
+       margin-top: 25px;
+       height: 20px;
+   }
+   .contact h1{
+       width: 90%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .contact h3{
+       margin: 18px;
+   }
+   
+   /*/-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----/*/
+   
+   .profile{
+       grid-area: profile;
+       height: auto;
+       width: auto;
+   }
+   .profile img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 55px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .profile h1{
+       width: 90%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .profile .discreption{
+       margin: 20px;
+   }
+   /*/-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----/*/
+    .work-experience{
+       grid-area: work-experience;
+       height: auto;
+       width: auto;
+   }
+   .work-experience img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 70px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .work-experience h1{
+       width: 85%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 50px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .work-experience .discreption{
+       margin: 50px;
+   }
+   .work-experience .list{
+       margin: 20px 0px 0px 70px;
+   }
+   
+   /*/-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----/*/
+   
+    .education{
+       grid-area: education;
+       height: auto;
+       width: auto;
+   }
+   .education img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 45px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .education h1{
+       width: 90%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .timeline{ 
+       width:100%;
+       height:357px;
+       display:flex;
+       margin: 50px 0px 0px 60px;
+   }
+   .lines{
+       margin-left:40px;
+       margin-top:6px;
+   }   
+   .dot{
+       width:14px;
+       height:14px;
+       background: black;
+       border-radius:8px;
+   }
+         
+   .line{
+       height:103px;
+       width:2px;
+       background: black;
+       margin-left:5.3px;
+   }
+   .d-container{
+       margin-left: -80px;
+       position: absolute;
+       margin-top: -15px;
+   }
+   .sc-container{
+       margin-left: 25px;
+       position: absolute;
+       margin-top: -20px;
+       
+   }  
+}
+/*/-----ipad size-----//-----ipad size-----//-----ipad size-----//-----ipad size-----//-----ipad size-----//-----ipad size-----//-----ipad size-----//-----ipad size-----//-----ipad size-----//-----ipad size-----/*/
+
+@media only screen and (max-width: 895px) {
+    .grid-container{
+        background: white;
+        min-height: 100vh;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto 500px;
+        grid-template-areas: 
+        
+        "avatar skills"
+        "contact work-experience"
+        "profile work-experience"
+        "education work-experience"
+        ;
+   
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+   
+   /*/-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----/*/
+   
+    .avatar-container{
+       grid-area: avatar;
+       height: 500px;
+       width: auto;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .avatar img{
+       height: 18em;
+       border-radius: 50%;
+       margin-left: 3em;
+       outline: 1px solid black;
+       outline-offset: 10px;
+    }
+    .avatar h1{
+        text-align: center;
+        margin-left: 10px;
+        font-size: 23px;
+    }
+    .avatar p{
+       text-align: center; 
+    }
+   
+   /*/-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----/*/
+   
+    .skills{
+       grid-area: skills;
+       height: auto;
+       width: auto;
+   }
+   .skills img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 52px;
+       margin-top: 120px;
+       position: absolute;
+   }
+   .skills h1{
+       width: 85%;
+       height: 40px;
+       font-size: 30px;
+       margin-left:50px;
+       margin-top: 120px;
+       margin-bottom: -20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .skills h3{
+       margin-top: 15px;
+   }
+   .skills .discreption{
+       margin: 50px;
+   }
+   
+   /*/-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----/*/
+   
+    .contact{
+       grid-area: contact;
+       height: auto;
+       width: auto;
+   }
+   .contact img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 55px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .contact .contact-icons{
+       margin-left: 100px;
+   }
+   .contact .contact-icons img{
+       margin-left: -40px;
+       margin-top: 25px;
+       height: 20px;
+   }
+   .contact h1{
+       width: 90%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .contact h3{
+       margin: 18px;
+   }
+   
+   /*/-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----/*/
+   
+   .profile{
+       grid-area: profile;
+       height: auto;
+       width: auto;
+   }
+   .profile img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 55px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .profile h1{
+       width: 90%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .profile .discreption{
+       margin: 20px;
+   }
+   /*/-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----/*/
+    .work-experience{
+       grid-area: work-experience;
+       height: auto;
+       width: auto;
+   }
+   .work-experience img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 70px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .work-experience h1{
+       width: 85%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 50px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .work-experience .discreption{
+       margin: 50px;
+   }
+   .work-experience .list{
+       margin: 20px 0px 0px 70px;
+   }
+   
+   /*/-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----/*/
+   
+    .education{
+       grid-area: education;
+       height: auto;
+       width: auto;
+   }
+   .education img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 45px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .education h1{
+       width: 90%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .timeline{ 
+       width:100%;
+       height:357px;
+       display:flex;
+       margin: 50px 0px 0px 60px;
+   }
+   .lines{
+       margin-left:40px;
+       margin-top:6px;
+   }   
+   .dot{
+       width:14px;
+       height:14px;
+       background: black;
+       border-radius: 8px;
+   }
+         
+   .line{
+       height:103px;
+       width:2px;
+       background: black;
+       margin-left:5.3px;
+   }
+   .d-container{
+       margin-left: -80px;
+       position: absolute;
+       margin-top: -15px;
+   }
+   .sc-container{
+       margin-left: 25px;
+       position: absolute;
+       margin-top: -20px;
+       
+   }  
+}
+
+
+/*/-----smartphone media querey-----//-----phone media querey-----//-----phone media querey-----//-----phone media querey-----//-----phone media querey-----//-----phone media querey-----//-----phone media querey-----//-----phone media querey-----//-----phone media querey-----//-----phone media querey-----//-----phone media querey-----/*/
+
+@media only screen and (max-width: 816px) {
+    .grid-container{
+        background: white;
+        min-height: 100%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        
+        "avatar"
+        "contact"
+        "profile"
+        "skills"
+        "education"
+        "work-experience"
+        ;
+   
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+   
+   /*/-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----//-----avatar area-----/*/
+   
+    .avatar-container{
+       grid-area: avatar;
+       height: 500px;
+       width: auto;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .avatar img{
+       height: 18em;
+       border-radius: 50%;
+       margin-left: 3em;
+       outline: 1px solid black;
+       outline-offset: 10px;
+    }
+    .avatar h1{
+        text-align: center;
+        margin-left: 10px;
+        font-size: 23px;
+    }
+    .avatar p{
+       text-align: center; 
+    }
+   
+   /*/-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----//-----skill area-----/*/
+   
+    .skills{
+        margin-top: -25px;
+       grid-area: skills;
+       height: auto;
+       width: auto;
+   }
+   .skills img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 52px;
+       margin-top: 120px;
+       position: absolute;
+   }
+   .skills h1{
+        width: 95%;
+        height: 40px;
+        font-size: 30px;
+        margin-left: 20px;
+        text-align: center;
+        border: 1px solid black;
+   }
+   .skills h3{
+       margin-top: 15px;
+   }
+   .skills .discreption{
+       margin: 50px;
+   }
+   
+   /*/-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----//-----contact area-----/*/
+   
+    .contact{
+       grid-area: contact;
+       height: auto;
+       width: auto;
+   }
+   .contact img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 55px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .contact .contact-icons{
+       margin-left: 100px;
+   }
+   .contact .contact-icons img{
+       margin-left: -40px;
+       margin-top: 25px;
+       height: 20px;
+   }
+   .contact h1{
+       width: 95%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .contact h3{
+       margin: 18px;
+   }
+   
+   /*/-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----//-----profile area-----/*/
+   
+   .profile{
+       grid-area: profile;
+       height: auto;
+       width: auto;
+   }
+   .profile img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 55px;
+       position: absolute;
+   }
+   .profile h1{
+       width: 95%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .profile .discreption{
+       margin: 20px;
+   }
+   /*/-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----//-----work-experience area-----/*/
+    .work-experience{
+       grid-area: work-experience;
+       height: auto;
+       width: auto;
+   }
+   .work-experience img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 70px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .work-experience h1{
+    width: 95%;
+    height: 40px;
+    font-size: 30px;
+    margin-left: 20px;
+    text-align: center;
+    border: 1px solid black;
+   }
+   .work-experience .discreption{
+       margin: 50px;
+   }
+   .work-experience .list{
+       margin: 20px 0px 0px 70px;
+   }
+   
+   /*/-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----//-----education area-----/*/
+   
+    .education{
+       grid-area: education;
+       height: auto;
+       width: auto;
+   }
+   .education img{
+       border-radius: 50%;
+       height: 40px;
+       margin-left: 45px;
+       margin-top: 0px;
+       position: absolute;
+   }
+   .education h1{
+       width: 90%;
+       height: 40px;
+       font-size: 30px;
+       margin-left: 20px;
+       text-align: center;
+       border: 1px solid black;
+   }
+   .timeline{ 
+       width:100%;
+       height:357px;
+       display:flex;
+       margin: 50px 0px 0px 60px;
+       justify-content: center;
+       align-items: center;
+       margin-left: -50px;
+   }
+   .lines{
+       margin-left:40px;
+       margin-top:6px;
+   }   
+   .dot{
+       width:14px;
+       height:14px;
+       background: black;
+       border-radius:8px;
+   }
+         
+   .line{
+       height:103px;
+       width:2px;
+       background: black;
+       margin-left:5.3px;
+   }
+   .d-container{
+       margin-left: -80px;
+       position: absolute;
+       margin-top: -15px;
+   }
+   .sc-container{
+       margin-left: 25px;
+       position: absolute;
+       margin-top: -20px;
+       
+   }  
+}
